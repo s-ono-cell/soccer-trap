@@ -20,6 +20,7 @@ function versionQueryPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
+    base: process.env.GITHUB_PAGES === 'true' ? '/soccer-trap/' : '/',
     plugins: [react(), tailwindcss(), versionQueryPlugin()],
     resolve: {
       alias: {

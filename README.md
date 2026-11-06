@@ -124,6 +124,19 @@ AIの自動推定に頼り切るのではなく、利用者が自分の目でコ
 
 ---
 
+## 🚀 GitHub Pages へのデプロイ方法
+
+`.github/workflows/deploy-pages.yml` が `main` ブランチへのプッシュ時、または Actions から手動実行したときにビルドとデプロイを行います。
+
+1. GitHub リポジトリの **Settings → Pages** を開きます。
+2. **Build and deployment** の **Source** で **GitHub Actions** を選択します。
+3. `main` ブランチに変更をプッシュするか、Actions の **Deploy to GitHub Pages** ワークフローを手動実行します。
+4. デプロイ完了後、同じ Pages 設定画面に表示される URL からアクセスできます。
+
+GitHub Pages 用ビルドではリポジトリのパス `/soccer-trap/` が設定されます。ローカル開発および Netlify 用のビルド設定には影響しません。
+
+---
+
 ## 🛠 技術スタック
 
 - **フロントエンド**: React 19 + TypeScript + Vite
