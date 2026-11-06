@@ -1,0 +1,6 @@
+{
+  "name": "サッカー・トラップ解析 サポータス (TrapForm)",
+  "description": "高校生向けサッカーのトラップ（ファーストタッチ）フォーム確認・記録Webアプリ。真横・後ろ動画の骨格推定、コマ送り同期、4局面ピン止め、フォームチェックとCSV保存に対応。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
