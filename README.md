@@ -107,20 +107,16 @@ AIの自動推定に頼り切るのではなく、利用者が自分の目でコ
 
 ---
 
-## 🚀 Netlify へのデプロイ方法
+## 🚀 GitHub Pages へのデプロイ方法
 
-本アプリはサーバーやバックエンドAPIを一切必要としない、純粋な静的Webアプリケーション（SPA）です。Netlifyでそのまま即座に公開できます。
+`.github/workflows/deploy-pages.yml` が `main` ブランチへのプッシュ時、または Actions から手動実行したときにビルドとデプロイを行います。
 
-### デプロイ設定
-- **Build Command**: `npm run build`
-- **Publish Directory**: `dist`
-- **Node.js バージョン**: 18以上 (20推奨)
+1. GitHub リポジトリの **Settings → Pages** を開きます。
+2. **Build and deployment** の **Source** で **GitHub Actions** を選択します。
+3. `main` ブランチに変更をプッシュするか、Actions の **Deploy to GitHub Pages** ワークフローを手動実行します。
+4. デプロイ完了後、同じ Pages 設定画面に表示される URL からアクセスできます。
 
-### 手順
-1. GitHub等のリポジトリに本プロジェクトをプッシュします。
-2. Netlifyの管理画面で「Add new site」→「Import an existing project」を選択します。
-3. リポジトリを選択し、上記の設定（Build Command: `npm run build` / Publish Directory: `dist`）を指定して「Deploy」をクリックします。
-4. 数十秒でビルドが完了し、公開URLが発行されます。
+GitHub Pages 用ビルドではリポジトリのパス `/soccer-trap/` が設定されます。ローカル開発用のビルド設定には影響しません。
 
 ---
 
